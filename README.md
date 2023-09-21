@@ -1,7 +1,7 @@
 
 # AUTH.ENGINEERING Client C++
 
-Implentation of auth.engineering in C++ (using Auth Server)
+Implementation of https://auth.engineering in C++ (using the Auth server)
 
 
 
