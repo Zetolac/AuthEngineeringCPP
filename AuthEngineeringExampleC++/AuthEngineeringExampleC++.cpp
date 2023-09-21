@@ -2,10 +2,10 @@
 #include <Windows.h>
 #include "Auth.h"
 
-std::string AppId = "1"; // REPLACE with your App ID
-std::string AppToken = "2ad593c28c414117bd16b5a49fcc3b1787c3078cf991ae5830458d283357"; // REPLACE with your App Token
-std::string AppVersion = "1"; // REPLACE with your App Version
-int AppEncryption = 471508791; // REPLACE with your App Encryption Key
+std::string AppId = ""; // REPLACE with your App ID
+std::string AppToken = ""; // REPLACE with your App Token
+std::string AppVersion = ""; // REPLACE with your App Version
+int AppEncryption = 1234; // REPLACE with your App Encryption Key
 
 bool AdvancedChecks = true; // Continue to check if the key is valid after login (If the key expires, the application closes automatically)
 
