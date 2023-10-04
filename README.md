@@ -7,7 +7,7 @@ Implementation of https://auth.engineering in C++ (using the Auth server)
 
 ## Files
 
- - [Auth.dll](https://auth.engineering/x64/Auth.dll) ([VirusTotal](https://www.virustotal.com/gui/file/ff7beebdd2c68b7258f56d010e9988c11b2c2880d1e4d3bcc94663ecc462d997/detection))
+ - [Auth.dll](https://auth.engineering/x64/Auth.dll) ([VirusTotal](https://www.virustotal.com/gui/file/6cae84365f69f60bdb7db7c2b181fdbc1c11d84994f966ffe1c49753f036e15a/detection))
  - [Auth.lib](https://auth.engineering/x64/Auth.lib)
 
 
