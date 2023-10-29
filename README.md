@@ -27,7 +27,7 @@ Implementation of https://auth.engineering in C++ (using the Auth server)
 #### Send Message to DiscordWebhhok
 
 ```http
-  string DiscordLog()
+  void DiscordLog()
 ```
 
 | Parameter | Type     | Description                |
