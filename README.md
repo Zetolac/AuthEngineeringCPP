@@ -24,7 +24,15 @@ Implementation of https://auth.engineering in C++ (using the Auth server)
 | `Name` | `string` | **Required**. Variable Name |
 
 
+#### Send Message to DiscordWebhhok
 
+```http
+  string DiscordLog()
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Message` | `string` | **Required**. Message |
 
 ## AUTH
 
