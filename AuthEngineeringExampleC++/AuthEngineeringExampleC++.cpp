@@ -2,16 +2,17 @@
 #include <Windows.h>
 #include "Auth.h"
 
-std::string AppId = ""; // REPLACE with your App ID
-std::string AppToken = ""; // REPLACE with your App Token
-std::string AppVersion = ""; // REPLACE with your App Version
-int AppEncryption = 0; // REPLACE with your App Encryption Key
-
 // This code is probably not enough to be protected, so please try to: encrypt your string, make your if() unrecognizable and hide the call to the authentication functions.
 // It is not recommended to print info about the key being valid or not
 
 int main()
 {
+
+    std::string AppId = ""; // REPLACE with your App ID
+    std::string AppToken = ""; // REPLACE with your App Token // Please ecncrypt this
+    std::string AppVersion = ""; // REPLACE with your App Version
+    int AppEncryption = 0; // REPLACE with your App Encryption Key // Please encrypt this
+
     std::cout << "Welcome to auth.enginnering c++ example usage:\n Please Enter Your Key -> ";
     std::string Key;
     std::cin >> Key;
@@ -20,11 +21,8 @@ int main()
     if (!LoginResult) 
         exit(0);
 
-    if (std::string((char*)(LoginResult ^ AppEncryption)) != AppToken) // Verify App Token returned by the server
+    if (memcmp((void*)(LoginResult ^ AppEncryption), AppToken.data(), 60)) // Verify App Token returned by the server
         exit(0);
-
-    if (GetToken() != AppToken) // Verify Stored App Token (OPTIONAL)
-       exit(0);
     
     std::cout << "[+] Login Success\n";
 
